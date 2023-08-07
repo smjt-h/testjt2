@@ -12,9 +12,9 @@ steps:
     commands:
       - echo "Hello from pipeline-1"
 trigger:
-event:
-- pull_request
-action:
-include:
-- opened
-- ready_for_review
+  event:
+  - pull_request
+  action:
+  include:
+  - opened
+  - ready_for_review

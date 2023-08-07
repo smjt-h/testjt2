@@ -40,4 +40,3 @@ trigger:
 
 depends_on:
   - pipeline-1
----

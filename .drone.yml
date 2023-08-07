@@ -15,5 +15,6 @@ trigger:
   event:
   - pull_request
   action:
-  - opened
-  - ready_for_review
+    include:
+    - opened
+    - ready_for_review

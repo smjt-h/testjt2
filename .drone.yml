@@ -20,8 +20,8 @@ steps:
     commands:
       - echo "Hello from pipeline-22"
     depends_on:
-      - frontend
-      - backend
+      - step-1
+      - step-2
 # trigger:
 #   event:
 #   - pull_request

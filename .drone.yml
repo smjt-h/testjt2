@@ -15,6 +15,13 @@ steps:
     image: alpine
     commands:
       - echo "Hello from pipeline-22"
+  - name: step-3
+    image: alpine
+    commands:
+      - echo "Hello from pipeline-22"
+    depends_on:
+      - frontend
+      - backend
 # trigger:
 #   event:
 #   - pull_request

@@ -12,7 +12,10 @@ steps:
     commands:
       - echo "Hello from pipeline-11"
   - name: step-2
-    image: alpine
+    image: micahhausler/alpine:3.16.0
+    settings:
+    repo: public.ecr.aws/micahhausler
+    registry: public.ecr.aws
     commands:
       - echo "Hello from pipeline-22"
   - name: step-3

@@ -8,7 +8,10 @@ platform:
 
 steps:
   - name: step-1
-    image: alpine
+    image: alpine:3.16.0
+    settings:
+      repo: public.ecr.aws/micahhausler
+      registry: public.ecr.aws
     commands:
       - echo "Hello from pipeline-11"
   - name: step-2

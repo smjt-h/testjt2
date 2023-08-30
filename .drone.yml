@@ -25,10 +25,3 @@ steps:
     depends_on:
       - step-1
       - step-2
-# trigger:
-#   event:
-#   - pull_request
-#   action:
-#     include:
-#     - opened
-#     - ready_for_review
